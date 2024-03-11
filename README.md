@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# React Authentication App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React authentication app using a Node.js backend and MySQL database.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/alexkuznecov16/authentication.git
 
-## Expanding the ESLint configuration
+    Install dependencies:
+    npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
+# Database
 
-- Configure the top-level `parserOptions` property like this:
+    Navigate to the backend directory:
+    
+    cd ./src/server
+    
+    
+    Run the Node.js server using nodemon:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+    
+    nodemon server.js
+    
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+# Frontend
+
+    npm run dev
+
+<a href="https://github.com/alexkuznecov16/authentication"><img height=150 src="https://github-readme-stats.vercel.app/api/top-langs/?username=alexkuznecov16&repo=authentication&layout=compact" /></a>

@@ -6,7 +6,7 @@ const Register: FC = () => {
   const [password, setPassword] = useState('');
   const [result, setResult] = useState('');
 
-  const handleSubmit = (event: { preventDefault: () => void; }) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     axios.post('http://localhost:8081/register', {email, password})
     .then(res => {
@@ -15,7 +15,7 @@ const Register: FC = () => {
     })
     .catch(err => {
       console.log(err);
-      setResult('Register failed!');
+      setResult('Register failed, this email is already exist!');
     });
   }
 

@@ -1,5 +1,9 @@
+// import * as process from 'process';
+// import * as dotenv from 'dotenv';
+// dotenv.config();
+
 import express from 'express';
-import mysql from 'mysql';
+import mysql from 'mysql2';
 import cors from 'cors';
 
 const app = express();
@@ -11,6 +15,16 @@ const db = mysql.createConnection({
 	user: 'admin',
 	password: 'sho0O-a+z1#Lpd(./y%f',
 	database: 'authorization',
+	connectionLimit: 10,
+});
+
+db.connect(err => {
+	if (err) {
+		console.error('Error connecting to MySQL:', err);
+		// Handle the error appropriately
+		return;
+	}
+	console.log('Connected to MySQL');
 });
 
 app.post('/login', (req, res) => {
