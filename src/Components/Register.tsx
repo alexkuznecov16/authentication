@@ -6,7 +6,7 @@ const Register: FC = () => {
   const [password, setPassword] = useState('');
   const [result, setResult] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     axios.post('http://localhost:8081/register', {email, password})
     .then(res => {
