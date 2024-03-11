@@ -30,5 +30,3 @@ This is a simple React authentication app using a Node.js backend and MySQL data
 # Frontend
 
     npm run dev
-
-<a href="https://github.com/alexkuznecov16/authentication"><img height=150 src="https://github-readme-stats.vercel.app/api/top-langs/?username=alexkuznecov16&repo=authentication&layout=compact" /></a>
